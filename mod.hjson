@@ -1,6 +1,7 @@
-name: Distributor
+name: distributor
+displayName: Distributor
 author: Slotterleet
-description: The ultimate form of the ultimate form.
-version: "1.0"
+description: The ultimate form of the ultimate form.\n\nWorks in both v6 and v7 versions of Mindustry. Multiplayer compatible.
+version: "1.0.1"
 minGameVersion: 126
 hidden: true
