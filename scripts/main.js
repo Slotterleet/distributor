@@ -1,8 +1,13 @@
 // Distributor
-Blocks.distributor.buildType = () => extend(Router.RouterBuild, Blocks.distributor, {
-  canControl(){
-    return true;
-  }
+Events.on(ContentInitEvent, e => {
+  Vars.content.blocks().each(b => {
+    if (!(b instanceof Router)) return;
+    b.buildType = () => extend(Router.RouterBuild, b, {
+      canControl(){
+        return true;
+      }
+    })
+  })
 })
 
 // UI
